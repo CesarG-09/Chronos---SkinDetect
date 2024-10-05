@@ -1,0 +1,5 @@
+Pillow==9.1.0  
+tensorflow==2.10.0  
+numpy==1.21.5  
+tkinterdnd2==0.3.0  
+customtkinter==5.0.0 
