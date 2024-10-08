@@ -13,7 +13,7 @@ c_hover_buttom = '#6090BD'
 
 ctk.set_appearance_mode("Dark")
 # Cargar el modelo entrenado desde la ruta especificada
-model_path = r'C:\Users\CONSULTORIA\SIC\Curso\proyecto_final\Proyecto_Final\models\melanoma_classifier_v2.keras'
+model_path = r'Chronos---SkinDetect\models\melanoma_classifier_v2.keras'
 model = tf.keras.models.load_model(model_path)
 
 def predict_image(img_path):
@@ -47,7 +47,7 @@ def show_prediction_interface():
     pred_window.title("SkinDetect - Predicción de Melanoma")
     pred_window.geometry("800x600")
     pred_window.resizable(False, False)
-    pred_window.iconbitmap(r"C:\Users\CONSULTORIA\SIC\Curso\proyecto_final\Proyecto_Final\assets\icon.ico")
+    pred_window.iconbitmap(r"Chronos---SkinDetect\assets\icon.ico")
 
     # Crear etiquetas para mostrar la imagen y el resultado
     main_frame_all = ctk.CTkFrame(
@@ -127,7 +127,7 @@ def show_how_it_works_interface():
     how_window.title("SkinDetect - ¿Cómo funciona?")
     how_window.geometry("800x400")
     how_window.resizable(False, False)
-    how_window.iconbitmap(r"C:\Users\CONSULTORIA\SIC\Curso\proyecto_final\Proyecto_Final\assets\icon.ico")
+    how_window.iconbitmap(r"Chronos---SkinDetect\assets\icon.ico")
 
     # Explicación del funcionamiento del modelo
     ctk.CTkLabel(
@@ -152,7 +152,7 @@ def main():
     app.geometry("800x400")
     app.resizable(False, False)
 
-    app.iconbitmap(r"C:\Users\CONSULTORIA\SIC\Curso\proyecto_final\Proyecto_Final\assets\icon.ico")
+    app.iconbitmap(r"Chronos---SkinDetect\assets\icon.ico")
     
     title_font = ctk.CTkFont(family="Cascadia Code", weight="bold", size=30)
     text_font = ctk.CTkFont(family="Segoe UI", weight="bold", size=20)
